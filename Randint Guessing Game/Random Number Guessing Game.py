@@ -1,0 +1,22 @@
+import random
+
+random_num=random.randint(1,11)
+
+#Detecting if odd or even.
+
+numtype_detect=random_num%2
+print("Guess the secret number for free robux!!!")
+if numtype_detect>0:
+    print("The number is an Odd Number.")
+else:
+    print("The number is an Even Number.")
+guess_num=0
+#Loop for 5 times starts here which asks user to input guess number and verifies guess number.
+while guess_num !=random_num:
+    guess_num = int(input("Enter Number: "))
+    if guess_num>random_num:
+        print("Choose a smaller number.")
+    elif guess_num<random_num:
+        print("Choose a larger number.")
+    else:
+        print("Correct! The number is ", random_num)
